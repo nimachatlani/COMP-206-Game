@@ -1,5 +1,9 @@
-#!"/Applications/XAMPP/cgi-bin/"
+#!/Applications/XAMPP/cgi-bin
 
-print "Content-Type: text/html\n\n";
+use strict;
+use warnings;
+
+use CGI;
+
+print CGI::header();
 print "Hello World";
-
